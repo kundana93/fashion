@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Show Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Fashion Show Registration Form</h1>
+
+    <form id="registrationForm">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="first name">First Name:</label>
+        <input type="text" id="first name" name="first name" required><br>
+
+        <label for="last name">Last Name:</label>
+        <input type="text" id="last name" name="last name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seating and Experience</legend>
+        <label for="seat">Preferred Seating:</label>
+        <select id="seat" name="seat">
+          <option value="VIP">VIP</option>
+          <option value="Premium">Premium</option>
+          <option value="General">General</option>
+        </select><br>
+
+        <label for="experience">Have you attended before?</label>
+        <input type="radio" id="yes" name="experience" value="Yes"> Yes
+        <input type="radio" id="no" name="experience" value="No"> No
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="output"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
